@@ -2,6 +2,8 @@ package hellojpa;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 public class JpaMain {
 
     public static void main(String[] args) {
@@ -13,25 +15,27 @@ public class JpaMain {
         tx.begin();
 
         try {
-//            Member member = new Member();
-//            member.setId(1L);
-//            member.setName("helloA");
-//
-//            em.persist(member);
-//
-//            Member findMember = em.find(Member.class, member.getId());
-//            System.out.println("findMember = " + findMember.getId());
-//            System.out.println("findMember = " + findMember.getName());
-//
-//            findMember.setName("helloJPA");
-//            System.out.println("=============update=============");
-//            System.out.println("findMember = " + findMember.getId());
-//            System.out.println("findMember = " + findMember.getName());
+            Team team = new Team();
+            team.setName("TeamA");
+            em.persist(team);
 
             Member member = new Member();
-            member.setUsername("A");
-
+            member.setUsername("member1");
             em.persist(member);
+
+            team.addMember(member);
+
+//            em.flush();
+//            em.clear();
+
+            Team findTeam = em.find(Team.class, team.getId()); //1차 캐시
+            List<Member> members = findTeam.getMembers();
+
+            System.out.println("=====================");
+            for (Member m : members) {
+                System.out.println("m = " + m.getUsername());
+            }
+            System.out.println("=====================");
 
             tx.commit();
         } catch (Exception e) {
