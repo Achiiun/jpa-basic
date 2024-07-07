@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e92fa1be-985c-44bc-9fd0-d9d36a8972da" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/JpaMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Member.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Team.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719924120766</updated>
-      <workItem from="1719924121801" duration="7763000" />
+      <workItem from="1719924121801" duration="8568000" />
     </task>
     <servers />
   </component>
