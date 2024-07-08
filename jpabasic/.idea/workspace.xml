@@ -15,6 +15,9 @@
       <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Member.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/Team.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Delivery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jpabook/jpashop/domain/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1719924120766</updated>
-      <workItem from="1719924121801" duration="10059000" />
+      <workItem from="1719924121801" duration="10209000" />
     </task>
     <task id="LOCAL-00001" summary="실전 예제5 - 연관관계 관리">
       <option name="closed" value="true" />
