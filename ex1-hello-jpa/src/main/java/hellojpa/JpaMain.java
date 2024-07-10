@@ -1,6 +1,9 @@
 package hellojpa;
 
 import jakarta.persistence.*;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Root;
 import org.hibernate.Hibernate;
 
 import java.util.List;
@@ -83,36 +86,45 @@ public class JpaMain {
 
 //            member1.getHomeAddress().setCity("newCity");
 
-            Member member = new Member();
-            member.setUsername("member1");
-            member.setHomeAddress(new Address("homeCity", "street", "10000"));
-
-            member.getFavoriteFoods().add("치킨");
-            member.getFavoriteFoods().add("족발");
-            member.getFavoriteFoods().add("피자");
-
-            member.getAddressHistory().add(new AddressEntity("old1", "street", "10000"));
-            member.getAddressHistory().add(new AddressEntity("old2", "street", "10000"));
-
-            em.persist(member);
-
-            em.flush();
-            em.clear();
-
-            System.out.println("===================START=================");
-            Member findMember = em.find(Member.class, member.getId());
-
-            //homeCity -> newCity
-            Address a = findMember.getHomeAddress();
-            findMember.setHomeAddress(new Address("newCity", a.getStreet(), a.getZipcode()));
-
-            //치킨 -> 한식
-            findMember.getFavoriteFoods().remove("치킨");
-            findMember.getFavoriteFoods().add("한식");
+//            Member member = new Member();
+//            member.setUsername("member1");
+//            member.setHomeAddress(new Address("homeCity", "street", "10000"));
+//
+//            member.getFavoriteFoods().add("치킨");
+//            member.getFavoriteFoods().add("족발");
+//            member.getFavoriteFoods().add("피자");
+//
+//            member.getAddressHistory().add(new AddressEntity("old1", "street", "10000"));
+//            member.getAddressHistory().add(new AddressEntity("old2", "street", "10000"));
+//
+//            em.persist(member);
+//
+//            em.flush();
+//            em.clear();
+//
+//            System.out.println("===================START=================");
+//            Member findMember = em.find(Member.class, member.getId());
+//
+//            //homeCity -> newCity
+//            Address a = findMember.getHomeAddress();
+//            findMember.setHomeAddress(new Address("newCity", a.getStreet(), a.getZipcode()));
+//
+//            //치킨 -> 한식
+//            findMember.getFavoriteFoods().remove("치킨");
+//            findMember.getFavoriteFoods().add("한식");
 
             //old1 -> newCity1
 //            findMember.getAddressHistory().remove(new Address("old1", "street", "10000"));
 //            findMember.getAddressHistory().add(new Address("newCity1", "street", "10000"));
+
+//            CriteriaBuilder cb = em.getCriteriaBuilder();
+//            CriteriaQuery<Member> query = cb.createQuery(Member.class);
+//
+//            Root<Member> m = query.from(Member.class);
+//
+//            CriteriaQuery<Member> cq = query.select(m).where(cb.equal(m.get("username"), "kim"));
+//            List<Member> resultList = em.createQuery(cq).getResultList();
+
 
             tx.commit();
         } catch (Exception e) {
