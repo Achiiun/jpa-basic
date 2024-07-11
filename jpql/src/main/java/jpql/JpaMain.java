@@ -125,6 +125,19 @@ public class JpaMain {
                 System.out.println("s = " + s);
             }
 
+            String query12 = "select m.username, m.age from Member m";
+            String query13 = "select m.team from Member m";
+            String query14 = "select t.member.username from Team t"; // 실패
+            String query15 = "select m.username from Team t join t.members m";
+            String query16 = "select m from Member m join fetch m.team"; // fetch join
+            String query17 = "select t from Team t join fetch t.members where t.name = '팀A'"; // collection fetch join
+
+            List<Team> resultList8 = em.createQuery(query17, Team.class)
+              .setFirstResult(0)
+              .setMaxResults(1) // collection fetch join 에서 페이징을 사용할수 없다(데이터가 뻥튀기 되기 때문에)
+              .getResultList();
+
+
             tx.commit();
         } catch (Exception e) {
             tx.rollback();

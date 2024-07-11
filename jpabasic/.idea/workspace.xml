@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e92fa1be-985c-44bc-9fd0-d9d36a8972da" name="Changes" comment="실전 예제6 - 값 타입 매핑">
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/src/main/java/hellojpa/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/JpaMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex1-hello-jpa/target/classes/hellojpa/JpaMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jpql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jpql/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jpql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jpql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jpql/src/main/java/jpql/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jpql/src/main/java/jpql/JpaMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
