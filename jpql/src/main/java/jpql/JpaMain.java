@@ -137,6 +137,44 @@ public class JpaMain {
               .setMaxResults(1) // collection fetch join 에서 페이징을 사용할수 없다(데이터가 뻥튀기 되기 때문에)
               .getResultList();
 
+            String query18 = "select count(m) from Member m";
+            List<Member> resultList9 = em.createQuery(query18, Member.class).getResultList();
+
+            String query19 = "select m from Member m where m = :member";
+            List<Member> resultList10 = em.createQuery(query19, Member.class)
+              .setParameter("member", member)
+              .getResultList();
+
+            String query20 = "select m from Member m where m.team = :team";
+            List<Member> resultList11 = em.createQuery(query20, Member.class)
+              .setParameter("team", team)
+              .getResultList();
+
+            for (Member memberList : resultList11) {
+                System.out.println("memberList = " + memberList);
+            }
+
+            em.flush();
+            em.clear();
+
+            List<Member> resultList12 = em.createNamedQuery("Member.findByUsername", Member.class)
+              .setParameter("username", "member1")
+              .getResultList();
+
+            for (Member memberList : resultList12) {
+                System.out.println("memberList = " + memberList);
+            }
+
+            //FLUSH 자동 호출
+            int resultCount = em.createQuery("update Member m set m.age = 20")
+              .executeUpdate();
+            System.out.println("resultCount = " + resultCount);
+
+            em.clear();
+            Member findMember2 = em.find(Member.class, member.getId());
+
+            System.out.println("findMember2 = " + findMember2.getAge());
+
 
             tx.commit();
         } catch (Exception e) {
